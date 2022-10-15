@@ -1,14 +1,266 @@
-html{
-    background-color: darkblue;
-    color: darkblue;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+:root {
+    --clr-primary: #ee6352;
+    --clr-secondary: #d16e8d;
+    --ff-numbers-shade: font-family: 'Bungee Shade', cursive;
+    --ff-numbers-inline: font-family: 'Bungee Inline', cursive;
+    --ff-text: 'Bungee', cursive;
+    --clr-gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+    --fw-title: 400;
 }
-.square{
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
-    transition: transform 1s;
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 44, 44);
+    overflow-x: hidden;
+    user-select: none;
+    cursor: url(), auto;           /*<----- add custom cursor */
 }
-  .square:hover{
-    transform: rotate(145deg);
-    transform: translate(180px, 100px);
+::-webkit-scrollbar {
+    width: 7px;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+::-webkit-scrollbar-thumb { 
+    background: rgba(255, 255, 255, 0);
+    padding: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(172, 172, 172);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em 0 6em;
+    margin: 0;
+    background: var(--clr-gradient);
+    position: relative;
+    z-index: 1000;
+    color: white;
+    clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+}
+label {
+    font-family: 'Bungee', cursive;
+    word-spacing: 3px;
+    font-size: 27px;
+    margin-left: 25%;
+}
+header > h1 {
+    height: 250px;
+    width: 67%;
+    display: flex;
+    text-align: right;
+    transform: translate(50%);
+    font-weight: var(--fw-title);
+    font-family: 'Bungee', cursive;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+header > h1 > span {
+    display: inline-block;
+    position: absolute;
+    right: 50%;
+    top: -40%;
+    z-index: -1;
+    opacity: 0.9;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--ff-text);
+}
+.water {
+    color: white;
+    background-image: url(C:/Software/Coding/images/water.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    background-position: center;
+    display: flex;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+}
+.sketchbook {
+    background-image: url(C:/Software/Coding/images/sketchbook_hands.png);
+    background-size: cover;
+    background-position: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+}
+.studio {
+    background-image: url(C:/Software/Coding/images/music-studio1.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    background-position: 40%;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+}
+.cakes {
+    color: white;
+    background-image: url(C:/Software/Coding/images/cakes.jpg);
+    background-size: cover;
+    background-position: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+}
+.sport {
+    margin-top: 17px;
+    background-image: url(C:/Software/Coding/images/kaisa_akali_sport.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position-y: 45%;
+    width: 100%;
+    transition: 1s;
+}
+.water:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.sketchbook:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.studio:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.cakes:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.sport:hover {
+    filter: blur(10px);
+}
+.topics {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.underline {
+    width: 100%;
+    height: 5px;
+    border-radius: 100px;
+    background:rgb(48, 17, 17);
+}
+
+@media (max-width: 415px) {
+    header{
+        padding: 60px;
+        height: 50px;
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+        padding: 0em 0 9em;
+    }
+    header > h1{
+        height: 80px;
+        font-size: 11px;
+        width: 65%;
+    }
+    .Nila-welcome{
+        display: inline-block;
+        margin-left: 20%;
+        width: 550px;
+        height: 300px;
+    }
+    label{
+        font-size: 15px;
+        margin-left: 0;
+    }
+    main {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .water {
+        width: 100%;
+        height: 30%;
+        clip-path: polygon(100% 100%, 100% 0, 0 20%, 0 100%);
+    }
+    .sketchbook {
+        width: 100%;
+        height: 30%;
+        clip-path: polygon(100% 100%, 100% 20%, 0 0, 0 100%);
+    }
+    .studio {
+        width: 100%;
+        height: 30%;
+        clip-path: polygon(100% 100%, 100% 0, 0 20%, 0 100%);
+    }
+    .cakes {
+        width: 100%;
+        height: 30%;
+        clip-path: polygon(100% 100%, 100% 20%, 0 0, 0 100%);
+    }
+    .sport {
+        margin-top: 0;
+        line-height: 7px;
+        width: 100%;
+        height: 110px;
+        clip-path: polygon(100% 100%, 100% 0, 0 17%, 0 100%);
+    }
+
+    .water:hover {
+        filter: blur(10px);
+        width: 100%;
+    }
+    .sketchbook:hover {
+        filter: blur(10px);
+        width: 100%;
+    }
+    .studio:hover {
+        filter: blur(10px);
+        width: 100%;
+    }
+    .cakes:hover {
+        filter: blur(10px);
+        width: 100%;
+    }
+    .sport:hover {
+        filter: blur(10px);
+    }
+
+    .underline {
+        margin-top: 10px;
+        height: 7px;
+    }
 }
