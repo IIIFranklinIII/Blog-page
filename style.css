@@ -1,0 +1,10 @@
+.square{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    transition: transform 1s;
+}
+  .square:hover{
+    transform: rotate(145deg);
+    transform: translate(180px, 100px);
+}
