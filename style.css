@@ -181,7 +181,7 @@ main {
     background:rgb(48, 17, 17);
 }
 
-@media(max-width: 430px) {
+@media(max-width: 721px) {
     header{
         padding: 60px;
         height: 50px;
