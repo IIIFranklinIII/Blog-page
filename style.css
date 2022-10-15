@@ -190,17 +190,18 @@ main {
     }
     header > h1{
         height: 80px;
-        font-size: 11px;
+        font-size: 13px;
         width: 65%;
     }
     .My-welcome{
         display: inline-block;
-        margin-top: -34%;
+        margin-top: -31%;
         margin-left: 43%;
         clip-path: polygon(10% 31%, 1500% 30%, 100% 10%, 60% 100%);
     }
     label{
-        font-size: 15px;
+        font-size: 16px;
+        margin-top: 4px;
         margin-left: 0;
     }
     main {
