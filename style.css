@@ -184,7 +184,7 @@ main {
 @media(max-width: 720px) {
     header{
         height: 30px;
-        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         padding: 0em 0 9em;
     }
     header > h1{
@@ -194,15 +194,16 @@ main {
     }
     .My-welcome{
         display: inline-block;
-        margin-top: -31%;
+        margin-top: -29%;
         margin-left: 43%;
-        clip-path: polygon(10% 31%, 1500% 30%, 100% 10%, 60% 100%);
+        clip-path: polygon(10% 32%, 1500% 30%, 100% 10%, 60% 100%);
     }
     label{
         font-size: 15px;
         margin-left: 0;
     }
     main {
+        margin-top: 35px;
         width: 100%;
         height: 40%;
         display: flex;
