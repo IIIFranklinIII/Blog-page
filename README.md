@@ -1,2 +1,2 @@
 # Blog-page
-page for blog post
+https://iiifrankliniii.github.io/Blog-page/
