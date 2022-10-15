@@ -83,7 +83,7 @@ main {
 }
 .water {
     color: white;
-    background-image: url(C:/Software/Coding/images/water.jpg);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/water.jpg?raw=true);
     background-size: cover;
     display: flex;
     justify-content: center;
