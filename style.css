@@ -83,7 +83,7 @@ main {
 }
 .water {
     color: white;
-    background-image: url(C:/Software/Coding/images/water.jpg);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/water.jpg?raw=true);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@ main {
     transition: 1s;
 }
 .sketchbook {
-    background-image: url(C:/Software/Coding/images/sketchbook_hands.png);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/sketchbook_hands.png?raw=true);
     background-size: cover;
     background-position: 57%;
     display: flex;
@@ -110,7 +110,7 @@ main {
     transition: 1s;
 }
 .studio {
-    background-image: url(C:/Software/Coding/images/music-studio1.jpeg);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/music-studio1.jpeg?raw=true);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ main {
 }
 .cakes {
     color: white;
-    background-image: url(C:/Software/Coding/images/cakes.jpg);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/cakes.jpg?raw=true);
     background-size: cover;
     background-position: 52%;
     display: flex;
@@ -138,7 +138,7 @@ main {
 }
 .sport {
     margin-top: 17px;
-    background-image: url(C:/Software/Coding/images/kaisa_akali_sport.jpg);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/kaisa_akali_sport.jpg?raw=true);
     background-size: cover;
     display: flex;
     justify-content: center;
