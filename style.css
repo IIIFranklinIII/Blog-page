@@ -55,14 +55,14 @@ label {
     margin-left: 55%;
 }
 header > h1 {
-    height: 200px;
+    height: 250px;
     width: 40%;
     display: flex;
     text-align: right;
     transform: translate(135%);
     font-weight: var(--fw-title);
     font-family: 'Bungee', cursive;
-    font-size: 18px;
+    font-size: 19px;
     word-spacing: 2px;
 }
 header > h1 > span {
