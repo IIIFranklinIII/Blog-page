@@ -14,7 +14,6 @@
 }
 html {
     margin: 0;
-    width: 100%;
     height: 100%;
     background-color: rgb(44, 44, 44);
     overflow-x: hidden;
@@ -53,14 +52,14 @@ label {
     font-family: 'Bungee', cursive;
     word-spacing: 3px;
     font-size: 27px;
-    margin-left: 25%;
+    margin-left: 55%;
 }
 header > h1 {
     height: 250px;
-    width: 75%;
+    width: 40%;
     display: flex;
     text-align: right;
-    transform: translate(50%);
+    transform: translate(135%);
     font-weight: var(--fw-title);
     font-family: 'Bungee', cursive;
     font-size: 18px;
@@ -69,8 +68,8 @@ header > h1 {
 header > h1 > span {
     display: inline-block;
     position: absolute;
-    right: 85%;
-    top: -90%;
+    right: 98%;
+    top:-150%;
     z-index: -1;
     opacity: 0.8;
 }
@@ -83,7 +82,7 @@ main {
 }
 .water {
     color: white;
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/water.jpg?raw=true);
+    background-image: url(C:/Software/Coding/images/water.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -97,7 +96,7 @@ main {
     transition: 1s;
 }
 .sketchbook {
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/sketchbook_hands.png?raw=true);
+    background-image: url(C:/Software/Coding/images/sketchbook_hands.png);
     background-size: cover;
     background-position: 57%;
     display: flex;
@@ -110,7 +109,7 @@ main {
     transition: 1s;
 }
 .studio {
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/music-studio1.jpeg?raw=true);
+    background-image: url(C:/Software/Coding/images/music-studio1.jpeg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -124,7 +123,7 @@ main {
 }
 .cakes {
     color: white;
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/cakes.jpg?raw=true);
+    background-image: url(C:/Software/Coding/images/cakes.jpg);
     background-size: cover;
     background-position: 52%;
     display: flex;
@@ -138,7 +137,7 @@ main {
 }
 .sport {
     margin-top: 17px;
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/kaisa_akali_sport.jpg?raw=true);
+    background-image: url(C:/Software/Coding/images/kaisa_akali_sport.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -181,22 +180,25 @@ main {
     background:rgb(48, 17, 17);
 }
 
-@media(max-width: 720px) {
+@media(max-width: 800px) {
     header{
-        height: 30px;
+        height: 100px;
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
         padding: 0em 0 9em;
     }
     header > h1{
-        height: 110px;
+        margin-left: 37%;
+        height: 200px;
         font-size: 11px;
-        width: 65%;
+        width: 60%;
+        transform: none;
+        right: 0;
     }
     .My-welcome{
         display: inline-block;
-        margin-top: -29%;
-        margin-left: 43%;
-        clip-path: polygon(10% 32%, 1500% 30%, 100% 10%, 60% 100%);
+        width: 560px;
+        margin-top: 24%;
+        margin-left: 61%;
     }
     label{
         font-size: 15px;
@@ -204,7 +206,6 @@ main {
     }
     main {
         margin-top: 35px;
-        width: 100%;
         height: 40%;
         display: flex;
         justify-content: center;
