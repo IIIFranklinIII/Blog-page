@@ -4,7 +4,7 @@
 
 
 :root {
-    --clr-primary: #ee6352;
+    --clr-primary: #E84545;
     --clr-secondary: #d16e8d;
     --ff-numbers-shade: font-family: 'Bungee Shade', cursive;
     --ff-numbers-inline: font-family: 'Bungee Inline', cursive;
@@ -16,6 +16,8 @@ html {
     margin: 0;
     height: 100%;
     background-color: rgb(44, 44, 44);
+    background-image: linear-gradient(to bottom, #2B2E4A, #e45757, #E84545, #903749, #53354A, rgba(232, 69, 69, 0));
+    background-repeat: no-repeat;
     overflow-x: hidden;
     user-select: none;
     cursor: url(), auto;           /*<----- add custom cursor */
@@ -47,31 +49,39 @@ header {
     z-index: 1000;
     color: white;
     clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 label {
     font-family: 'Bungee', cursive;
     word-spacing: 3px;
     font-size: 27px;
-    margin-left: 55%;
+    margin-left: 30%;
 }
 header > h1 {
-    height: 350px;
-    width: 42%;
+    height: 240px;
+    width: 55%;
     display: flex;
-    text-align: right;
-    transform: translate(135%);
+    text-align: left;
+    transform: translate(60%);
     font-weight: var(--fw-title);
     font-family: 'Bungee', cursive;
-    font-size: 19px;
+    font-size: 18px;
     word-spacing: 2px;
 }
 header > h1 > span {
     display: inline-block;
     position: absolute;
-    right: 99%;
-    top:-120%;
+    background-position: center;
+    right: 106%;
+    top: -41%;
     z-index: -1;
     opacity: 0.8;
+}
+.My-welcome {
+    height: 550px;
+    width: 400px;
+    border-top-left-radius: 100px;
 }
 main {
     width: 100%;
@@ -82,7 +92,8 @@ main {
 }
 .water {
     color: white;
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/water.jpg?raw=true);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/coding.png?raw=true);
+    image-rendering: optimizeSpeed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -94,9 +105,12 @@ main {
     width: 23%;
     clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
     transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .sketchbook {
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/sketchbook_hands.png?raw=true);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/scketchbook-hands.png?raw=true);
+    image-rendering: optimizeSpeed;
     background-size: cover;
     background-position: 57%;
     display: flex;
@@ -107,9 +121,12 @@ main {
     width: 23%;
     clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
     transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .studio {
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/music-studio1.jpeg?raw=true);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/music-studio1Compressed.png?raw=true);
+    image-rendering: optimizeSpeed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -120,10 +137,13 @@ main {
     width: 23%;
     clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
     transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .cakes {
     color: white;
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/cakes.jpg?raw=true);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/cakesCompressed.png?raw=true);
+    image-rendering: optimizeSpeed;
     background-size: cover;
     background-position: 52%;
     display: flex;
@@ -134,10 +154,13 @@ main {
     width: 23%;
     clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
     transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .sport {
     margin-top: 17px;
-    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/kaisa_akali_sport.jpg?raw=true);
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/kaisa_akali_sport.png?raw=true);
+    image-rendering: optimizeSpeed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -146,6 +169,7 @@ main {
     background-position-y: 45%;
     width: 100%;
     transition: 1s;
+    border-radius: 20px;
 }
 .water:hover {
     filter: blur(10px);
@@ -179,6 +203,90 @@ main {
     border-radius: 100px;
     background:rgb(48, 17, 17);
 }
+.label2 {
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 40px;
+    transform: translate(-30%);
+}
+.winter {
+    font-size: 46px;
+}
+.event {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 5px solid #E84545;
+    border-radius: 20px;
+}
+.snow {
+    border-radius: 20px;
+    position: absolute;
+    width: 99% ;
+    height: 86%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.3%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st1' cx='5' cy='8' r='1'/%3E%3Ccircle class='st1' cx='38' cy='3' r='1'/%3E%3Ccircle class='st1' cx='12' cy='4' r='1'/%3E%3Ccircle class='st1' cx='16' cy='16' r='1'/%3E%3Ccircle class='st1' cx='47' cy='46' r='1'/%3E%3Ccircle class='st1' cx='32' cy='10' r='1'/%3E%3Ccircle class='st1' cx='3' cy='46' r='1'/%3E%3Ccircle class='st1' cx='45' cy='13' r='1'/%3E%3Ccircle class='st1' cx='10' cy='28' r='1'/%3E%3Ccircle class='st1' cx='22' cy='35' r='1'/%3E%3Ccircle class='st1' cx='3' cy='21' r='1'/%3E%3Ccircle class='st1' cx='26' cy='20' r='1'/%3E%3Ccircle class='st1' cx='30' cy='45' r='1'/%3E%3Ccircle class='st1' cx='15' cy='45' r='1'/%3E%3Ccircle class='st1' cx='34' cy='36' r='1'/%3E%3Ccircle class='st1' cx='41' cy='32' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 10s linear infinite;
+}
+.snow div {
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.7%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st3' cx='4' cy='14' r='1'/%3E%3Ccircle class='st3' cx='43' cy='3' r='1'/%3E%3Ccircle class='st3' cx='31' cy='30' r='2'/%3E%3Ccircle class='st3' cx='19' cy='23' r='1'/%3E%3Ccircle class='st3' cx='37' cy='22' r='1'/%3E%3Ccircle class='st3' cx='43' cy='16' r='1'/%3E%3Ccircle class='st3' cx='8' cy='45' r='1'/%3E%3Ccircle class='st3' cx='29' cy='39' r='1'/%3E%3Ccircle class='st3' cx='13' cy='37' r='1'/%3E%3Ccircle class='st3' cx='47' cy='32' r='1'/%3E%3Ccircle class='st3' cx='15' cy='4' r='2'/%3E%3Ccircle class='st3' cx='9' cy='27' r='1'/%3E%3Ccircle class='st3' cx='30' cy='9' r='1'/%3E%3Ccircle class='st3' cx='25' cy='15' r='1'/%3E%3Ccircle class='st3' cx='21' cy='45' r='2'/%3E%3Ccircle class='st3' cx='42' cy='45' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 15s linear infinite;
+}
+@keyframes animatedBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0px 300px;
+    }
+}
+.tree {
+    margin-top: 25%;
+    width: 400px;
+    height: 400px;
+}
+.event-text {
+    width: 500px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, #E84545, #e8454580, rgba(0, 0, 0, 0));
+    font-family: var(--ff-text);
+}
+.label3 {
+    width: 20px;
+    height: 20px;
+    transform: translate(5px);
+}
+.contacts {
+    transform: translate(-30%);
+}
+li {
+    margin-top: 8px;
+}
+a {
+    margin-left: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+    border: 3px solid #000000;
+    background-color: #E84545;
+    color: black;
+}
+.thanks-to { 
+    width: 50%;
+    margin-top: 5%;
+}
 
 @media(max-width: 800px) {
     header{
@@ -187,7 +295,7 @@ main {
         padding: 0em 0 9em;
     }
     header > h1{
-        margin-top: 13%;
+        margin-top: 8%;
         margin-left: 37%;
         height: 200px;
         font-size: 11px;
@@ -198,7 +306,7 @@ main {
     .My-welcome{
         display: inline-block;
         width: 560px;
-        margin-top: 20%;
+        margin-top: 24%;
         margin-left: 61%;
     }
     label{
@@ -214,7 +322,6 @@ main {
     .topics{
         flex-direction: column;
     }
-
     .water {
         width: 100%;
         height: 30%;
@@ -242,7 +349,6 @@ main {
         height: 110px;
         clip-path: polygon(100% 80%, 100% 0, 0 20%, 0 100%);
     }
-
     .water:hover {
         filter: blur(10px);
         width: 100%;
@@ -262,7 +368,6 @@ main {
     .sport:hover {
         filter: blur(10px);
     }
-
     .underline {
         display: none;
     }
