@@ -171,7 +171,7 @@ main {
     transition: 1s;
     border-radius: 20px;
 }
-.water:hover {
+.code:hover {
     filter: blur(10px);
     width: 26%;
 }
