@@ -292,7 +292,7 @@ a {
     header{
         height: 100px;
         clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-        padding: 0em 0 9em;
+        padding: 0em 0 0em;
     }
     header > h1{
         width: 300px;
