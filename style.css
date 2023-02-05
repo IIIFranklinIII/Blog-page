@@ -73,14 +73,14 @@ border-bottom-right-radius: 20px;
     .menu__button--arrow {   
         position: relative;        
     }  
-    .menu__button--arrow::before {   
+    .menu__button::before {   
         content: '▼';
         color: #aaa;
         position: absolute;
         bottom: 0;
         transform: scale(.5, .3) translate(-50%);
     }  
-    .menu__button--arrow:hover::before {   
+    .menu__button:hover::before {   
         display: none;
     }  
 }
