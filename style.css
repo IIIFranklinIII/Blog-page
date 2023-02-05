@@ -68,7 +68,6 @@ border-bottom-right-radius: 20px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     transition: 250ms;
-
 }
 @media (min-width: 40rem) {    
     .menu__button--arrow {   
