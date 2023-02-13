@@ -290,9 +290,9 @@ main {
     transition: 1s;
     border-radius: 20px;
     height: 180px;
-    color:white;
+    color: white;
 }
-.sport-h1 {
+.sport-h {
     margin-top: 2%;
 }
 .code:hover {
