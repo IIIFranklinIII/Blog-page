@@ -290,6 +290,10 @@ main {
     transition: 1s;
     border-radius: 20px;
     height: 180px;
+    color:white;
+}
+.sport-h1 {
+    margin-top: 2%;
 }
 .code:hover {
     filter: blur(10px);
