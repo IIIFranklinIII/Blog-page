@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root {
+    --clr-primary: #E84545;
+    --clr-secondary: #d16e8d;
+    --ff-text: 'Quicksand', sans-serif;
+    --clr-gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+    --fw-title: 500;
+    --fw-title1: 600;
+    --fw-title2: 700;
+}
+html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(44, 44, 44);
+    background-image: linear-gradient(to bottom, rgba(235,0,0,1) 0%, rgba(116,0,0,1) 48%, rgba(12,5,27,1) 100%);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    user-select: none;
+    cursor: url(), auto;           /*<----- add custom cursor */
+}
+::-webkit-scrollbar {
+    width: 7px;
+    background: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+::-webkit-scrollbar-thumb { 
+    background: rgba(255, 255, 255, 0);
+    padding: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(172, 172, 172);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1em;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+label {
+    color: black;
+    font-family: var(--ff-text);
+    font-weight: var(--fw-title1);
+    word-spacing: 3px;
+    font-size: 40px;
+}
+header > h1 {
+    color: black;
+    height: 100px;
+    width: 60%;
+    display: flex;
+    text-align: left;
+    transform: translate(66%);
+    font-weight: var(--fw-title1);
+    font-family: var(--ff-text);
+    font-size: 19px;
+    word-spacing: 2px;
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--ff-text);
+    font-weight: var(--fw-title2);
+}
+.code {
+    color: white;
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/coding.png?raw=true);
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    background-position: center;
+    display: flex;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.sketchbook {
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/art.jpg?raw=true);
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    background-position: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.studio {
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/music-studio1Compressed.png?raw=true);
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    background-position: 40%;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.cakes {
+    color: white;
+    background-image: url(https://github.com/IIIFranklinIII/images/blob/main/cakesCompressed.png?raw=true);
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+    background-position: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 7px;
+    width: 23%;
+    clip-path: polygon(100% 100%, 100% 0, 0 9%, 0 100%);
+    transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.code:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.sketchbook:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.studio:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.cakes:hover {
+    filter: blur(10px);
+    width: 26%;
+}
+.topics {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
